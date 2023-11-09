@@ -74,9 +74,9 @@ pub fn new_map_rooms_and_corridors() -> (Vec<Rect>, Vec<TileType>) {
     let mut map = vec![TileType::Wall; 80*50];
 
     let mut rooms : Vec<Rect> = Vec::new();
-    const MAX_ROOMS : i32 = 30;
-    const MIN_SIZE : i32 = 6;
-    const MAX_SIZE : i32 = 10;
+    const MAX_ROOMS : i32 = 60;
+    const MIN_SIZE : i32 = 4;
+    const MAX_SIZE : i32 = 14;
 
     let mut rng = RandomNumberGenerator::new();
 
@@ -134,4 +134,3 @@ pub fn draw_map(map: &[TileType], ctx : &mut Rltk) {
         }
     }
 }
-
